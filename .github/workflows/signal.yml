@@ -2,10 +2,10 @@ name: MA Signal
 
 on:
   schedule:
-    # UTC 기준입니다. 20:15 UTC = 다음날 05:15 KST
+    # UTC 기준입니다. 21:00 UTC = 다음날 06:00 KST
     # GitHub 예약 실행은 5~20분 지연될 수 있어 15분 앞당겨 둡니다.
     # UTC 일~금(0-5) = KST 월~토 → 일요일 수신 제외
-    - cron: "15 20 * * 0-5"
+    - cron: "00 21 * * 1-5"
   workflow_dispatch:        # Actions 탭에서 수동 실행 버튼
 
 concurrency:
