@@ -1,3 +1,8 @@
-yfinance>=0.2.40
-pandas>=2.0.0
-requests>=2.31.0
+# 국내 종목은 KRX 원본에서 직접 받는다.
+# Yahoo 는 새벽 실행 시 국내 일봉 갱신이 늦어 전일 마감분이 빠진다.
+pykrx>=1.0.45
+
+yfinance==0.2.65
+pandas>=2.0
+numpy>=1.24
+requests>=2.31
