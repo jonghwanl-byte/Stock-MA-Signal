@@ -1,0 +1,18 @@
+# 가격/거래량 캐시 (재다운로드 방지용, 용량 크고 매번 갱신됨)
+.bt_cache.pkl
+.bt_cache_v2.pkl
+
+# 백테스트 산출물 (Actions에서는 artifact로 별도 업로드됨)
+backtest_result.csv
+backtest_v2_result.csv
+backtest_v2_compare.csv
+sweep_result.csv
+transition_events_full.csv
+transition_events_drop60.csv
+
+# 파이썬 캐시
+__pycache__/
+*.pyc
+
+# 로컬 환경변수
+.env
